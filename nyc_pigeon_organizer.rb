@@ -9,6 +9,8 @@ def nyc_pigeon_organizer (data)
     end 
   end 
   
+  final_keys = final.keys
+  
   data.each do |attribute, stat|
     if attribute == :color
       stat.each do |sub_attribute, pigeon|
