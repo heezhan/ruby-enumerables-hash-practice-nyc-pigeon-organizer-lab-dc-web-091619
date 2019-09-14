@@ -13,7 +13,8 @@ def nyc_pigeon_organizer (data)
     if attribute == :color
       stat.each do |sub_attribute, pigeon|
         pigeon.each do |name|
-          final[name][:color].push(sub_attribute.to_s) if name == final.keys
+          path = final[name][:color]
+          path.push(sub_attribute.to_s) if name == final.keys
         end 
       end 
     end 
