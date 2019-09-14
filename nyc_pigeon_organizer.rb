@@ -16,7 +16,7 @@ def nyc_pigeon_organizer (data)
       stat.each do |sub_attribute, pigeon|
         pigeon.each do |name|
           final_keys.each do |bird_name|
-          final[name][:color] << sub_attribute.to_s if name == bird_name
+          final[name][:color] << sub_attribute.to_s
           end 
         end 
       end 
@@ -27,8 +27,7 @@ def nyc_pigeon_organizer (data)
     if attribute == :gender 
       stat.each do |sub_attribute, pigeon|
         pigeon.each do |name|
-          final_keys.each do |bird_name|
-          final[name][:gender] << sub_attribute.to_s if name == bird_name
+          final[name][:gender] << sub_attribute.to_s
           end 
         end 
       end 
