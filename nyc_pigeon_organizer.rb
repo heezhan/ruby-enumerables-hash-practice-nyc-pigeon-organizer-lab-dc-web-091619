@@ -36,7 +36,7 @@ def nyc_pigeon_organizer (data)
   end 
   
     data.each do |attribute, stat|
-    if attribute == :color
+    if attribute == :lives 
       stat.each do |sub_attribute, pigeon|
         pigeon.each do |name|
           final_keys.each do |bird_name|
